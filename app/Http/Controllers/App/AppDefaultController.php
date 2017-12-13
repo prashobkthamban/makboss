@@ -49,13 +49,14 @@ class AppDefaultController extends Controller {
 		return $zipcode;
 	}
 
-	public function getRole() {
-		$role 		= $this->fetchRole();
+	public function getRole($id) {
+		$role 		= $this->fetchRole($id);
 		return Response::json(array('status'=>'1','role'=>$role));
 	}
 
-	public static function fetchRole() {
-		$role 		= Role::where('delete_status','=','0')
+	public static function fetchRole($id) {
+		$role 		= Role::where('role_id','>',$id)
+						->where('delete_status','=','0')
 						->get();
 		return $role;
 	}

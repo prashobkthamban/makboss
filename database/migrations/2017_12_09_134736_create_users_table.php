@@ -35,24 +35,24 @@ class CreateUsersTable extends Migration
             $table->foreign('zipcode_id')
                             ->references('zipcode_id')->on('mkb_zipcodes')
                             ->onDelete('cascade');
-            $table->integer('role_id')->unsigned();
+            $table->integer('role_id')->unsigned()->nullable();
             $table->foreign('role_id')
                             ->references('role_id')->on('mkb_role')
                             ->onDelete('cascade');
-            $table->integer('user_creater_id')->unsigned();
+            $table->integer('user_creater_id')->unsigned()->nullable();
             $table->foreign('user_creater_id')
                             ->references('user_id')->on('mkb_users')
                             ->onDelete('cascade');
-            $table->integer('user_assigner_id')->unsigned();
+            $table->integer('user_assigner_id')->unsigned()->nullable();
             $table->foreign('user_assigner_id')
                             ->references('user_id')->on('mkb_users')
                             ->onDelete('cascade');
-            $table->integer('user_assign_to_id')->unsigned();
+            $table->integer('user_assign_to_id')->unsigned()->nullable();
             $table->foreign('user_assign_to_id')
                             ->references('user_id')->on('mkb_users')
                             ->onDelete('cascade');
             $table->string('user_firstname');
-            $table->string('user_lastname');
+            $table->string('user_lastname')->nullable();
             $table->string('user_email');
             $table->string('user_mobile');
             $table->string('user_telephone');
@@ -62,8 +62,8 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('password');
             $table->string('user_key');
-            $table->date('user_last_blocked_on');
-            $table->date('user_last_deleted_on');
+            $table->date('user_last_blocked_on')->nullable();
+            $table->date('user_last_deleted_on')->nullable();
             $table->integer('user_role');
             $table->integer('user_status');
             $table->integer('delete_status');
