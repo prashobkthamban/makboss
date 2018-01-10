@@ -35,6 +35,9 @@ class CreateCompanyTable extends Migration
                             ->onDelete('cascade');
             $table->string('company_name');
             $table->string('company_website');
+            $table->integer('user_quota');
+            $table->integer('used_quota');
+            $table->timestamp('quota_updated_on');
             $table->timestamp('company_last_deleted_on');
             $table->timestamp('company_last_blocked_on');
             $table->string('company_blocked_reason');

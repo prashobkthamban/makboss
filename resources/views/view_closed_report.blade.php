@@ -33,14 +33,11 @@
 					</div>
 					<div class="panel panel-default" style="margin-top:-15px;">
 						<div class="panel-body">
-							<div class="table-responsive">
 								<table class=" table">
-									<thead>
 										<tr>
 											<th>Customer</th>
 											<td></td>
 										</tr>
-									</thead>	
 										<tr>
 											<th>Visit Time</th>
 											<td></td>
@@ -59,7 +56,7 @@
 										</tr>
 										<tr>
 											<th>Photos</th>
-											<td><a class="btn btn-primary btn-xs">view</a></td>
+											<td><a class="btn btn-default btn-xs">view</a></td>
 										</tr>
 										<tr>
 											<th>Attended by</th>
@@ -70,7 +67,6 @@
 											<td></td>
 										</tr>
 								</table>	
-							</div>
 						</div>
 					</div>
 				</div>

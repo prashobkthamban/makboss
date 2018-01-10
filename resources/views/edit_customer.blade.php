@@ -37,7 +37,8 @@
 				  				<div class="form-group">
 		                        	<label>Assign To: <span class="text-danger">*</span></label>
 		                            <select class="form-control">
-		                                <option>users</option>
+		                               <option selected>Me</option>
+										<option>usernames</option>
 		                            </select>
 		                        </div>
 								<div class="form-group">
@@ -108,7 +109,7 @@
 		                        </div>
 								<div class="span3">
 									<input class="btn btn-primary btn-sm" type="submit" value="update">
-									<a class="btn btn-primary btn-sm" href="customers">cancel</a>
+									<a class="btn btn-default btn-sm" href="customers">cancel</a>
 								</div>
 							</div>
 						</div>

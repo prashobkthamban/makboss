@@ -42,13 +42,15 @@
 									<div class="row">
 										<div class="col-lg-12"><br>
 											<div class="panel-body">
-												<div class="form-group">
-													<label>From:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<label>To:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<a class="btn btn-primary btn-sm">view</a>
-												</div>
+												<div class="form-group" style="margin-top:25px;">
+                                                    <label>From:
+                                                    	<input type="text" class="datepicker" name="date" required="">
+            										</label>
+                                                    <label>To:
+                                                    	<input type="text" class="datepicker" name="date" required="">
+            										</label>
+                                                    <a class="btn btn-primary btn-sm">view</a>
+                                                </div>
 												<div class="table-responsive">
 													<table class="table ">
 														<thead>
@@ -82,38 +84,34 @@
 										</div>
 										<div class="panel panel-default" style="margin-top:-15px;">
 											<div class="panel-body">
-												<div class="table-responsive">
-													<table class="table ">
-														<thead>
-															<tr>
-																<th>Total Visits</th> 
-																<td></td>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>Total Sale Value</th>
-																<td></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
+												<table class="table ">
+													<tr>
+														<th>Total Visits</th> 
+														<td></td>
+													</tr>
+													<tr>
+														<th>Total Sale Value</th>
+														<td></td>
+													</tr>
+												</table>
 											</div>
 										</div>
-										<a class="btn btn-primary btn-xs">Export excel</a>
+										<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 									</div>
 								</div>
 								<div class="tab-pane fade" id="detailed">
 									<div class="row">
 										<div class="col-lg-12"><br>
 											<div class="panel-body">
-												<div class="form-group">
-													<label>From:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<label>To:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<a class="btn btn-primary btn-sm">view</a>
-												</div>
+												<div class="form-group" style="margin-top:25px;">
+                                                    <label>From:
+                                                    	<input type="text" class="datepicker" name="date" required="">
+            										</label>
+                                                    <label>To:
+                                                    	<input type="text" class="datepicker" name="date" required="">
+            										</label>
+                                                    <a class="btn btn-primary btn-sm">view</a>
+                                                </div>
 												<div class="table-responsive">
 													<table class="table ">
 														<thead>
@@ -135,7 +133,7 @@
 																<td></td>
 																<td></td>
 																<td><a class="btn btn-primary btn-sm">view</a></td>
-																<td><a class="btn btn-primary btn-sm">view</a></td>
+																<td><a class="btn btn-default btn-sm">view</a></td>
 																<td></td>
 																<td></td>
 															</tr>
@@ -153,27 +151,23 @@
 										</div>
 										<div class="panel panel-default" style="margin-top:-15px;">
 											<div class="panel-body">
-												<div class="table-responsive">
-													<table class="table ">
-														<thead>
-														<tr>
-															<th>Total Visits</th> 
-															<td></td>
-														</tr>
-														</thead>
-														<tr>
-															<th>Total Sale Value</th>
-															<td></td>
-														</tr>
-														<tr>
-															<th>Total Collection</th>
-															<td></td>
-														</tr>
-													</table>
-												</div>
+												<table class="table ">
+													<tr>
+														<th>Total Visits</th> 
+														<td></td>
+													</tr>
+													<tr>
+														<th>Total Sale Value</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>Total Collection</th>
+														<td></td>
+													</tr>
+												</table>
 											</div>
 										</div>
-										<a class="btn btn-primary btn-xs">Export excel</a>
+										<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 									</div>
 								</div>
 							</div>

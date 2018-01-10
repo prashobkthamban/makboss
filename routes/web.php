@@ -156,4 +156,28 @@ Route::get('view_supervisor', function()
 {
 	return view('view_supervisor');
 });
+Route::get('checkin', function()
+{
+    return view('checkin');
+});
+Route::get('notifications', function()
+{
+    return view('notifications');
+});
+Route::get('edit_profile', function()
+{
+    return view('edit_profile');
+});
+Route::get('manage_admin', function()
+{
+    return view('manage_admin');
+});
+Route::get('manage_country', function()
+{
+    return view('manage_country');
+});
+Route::get('view_admin', function()
+{
+    return view('view_admin');
+});
 

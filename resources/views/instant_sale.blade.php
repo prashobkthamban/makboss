@@ -36,7 +36,8 @@
 								<div class="form-group">
 									<label> Select User:</label>
 									<select class="form-control">
-										<option selected>usernames</option>
+										<option selected>Me</option>
+										<option >usernames</option>
 									</select>
 								</div>   
 								<div class="form-group">
@@ -48,7 +49,7 @@
 								</div>  
 								<div class="form-group">
 									<label>Date: <span class="text-danger">*</span></label><br>
-									<input type="text" id="datepicker" name="date" required>
+									<input type="text" class="datepicker" name="date" required>
 								</div>
 								<div class="form-group">
 									<label>Instant Sale Amount: </label>
@@ -64,7 +65,7 @@
 								</div>
 								<div class="span3">
 									<input class="btn btn-primary btn-sm" type="submit" value="save">
-									<a class="btn btn-primary btn-sm" href="home">cancel</a>
+									<a class="btn btn-default btn-sm" href="home">cancel</a>
 								</div>
 							</div>  
 						</div>

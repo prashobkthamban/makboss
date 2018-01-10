@@ -27,14 +27,15 @@ class CreateCustomerTable extends Migration
             $table->foreign('state_id')
                             ->references('state_id')->on('mkb_states')
                             ->onDelete('cascade');
-            $table->integer('zipcode_id')->unsigned();
-            $table->foreign('zipcode_id')
-                            ->references('zipcode_id')->on('mkb_zipcodes')
-                            ->onDelete('cascade');
             $table->integer('payment_terms_id')->unsigned();
             $table->foreign('payment_terms_id')
                             ->references('payment_terms_id')->on('mkb_payment_terms')
                             ->onDelete('cascade');
+            $table->integer('approved_by')->unsigned()->nullable();
+            $table->foreign('approved_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
+            $table->timestamp('approved_on')->nullable();
             $table->integer('customer_creator_id')->unsigned();
             $table->foreign('customer_creator_id')
                             ->references('user_id')->on('mkb_users')
@@ -56,13 +57,28 @@ class CreateCustomerTable extends Migration
             $table->string('customer_credit_limit');
             $table->string('customer_latitude');
             $table->string('customer_longitude');
-            $table->timestamp('customer_blocked_on');
-            $table->timestamp('customer_deleted_on');
+            $table->timestamp('customer_last_blocked_on');
+            $table->timestamp('customer_last_deleted_on');
             $table->timestamp('customer_payment_terms_id_modified_on');
             $table->timestamp('customer_credit_limit_modified_on');
             $table->integer('customer_status');
+            $table->string('block_string')->nullable();
+            $table->integer('show_status');
+            $table->timestamp('blocked_on')->nullable();
             $table->integer('delete_status');
-            $table->timestamp('deleted_at');
+            $table->timestamp('deleted_at')->nullable();
+            $table->integer('deleted_by')->unsigned()->nullable();
+            $table->foreign('deleted_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
+            $table->integer('modified_by')->unsigned()->nullable();
+            $table->foreign('modified_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
+            $table->integer('blocked_by')->unsigned()->nullable();
+            $table->foreign('blocked_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
             $table->timestamps();
         });
     }

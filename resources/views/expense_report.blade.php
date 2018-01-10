@@ -37,18 +37,22 @@
 									<div class="form-group">
 										<label> Created by:</label>
 										<select class="form-control">
-											<option selected>Usernames</option>
-										</select>
+    										<option selected>All</option>
+    										<option>Only me</option>
+    										<option>Usernames</option>
+    									</select>
 									</div>
 								</div>
 								<div class="col-lg-8">
 									<div class="form-group" style="margin-top:25px;">
-										<label>From:</label>
-										<input type="text" id="datepicker" name="date" required>
-										<label>To:</label>
-										<input type="text" id="datepicker" name="date" required>
-										<a class="btn btn-primary btn-sm">view</a>
-									</div>
+                                        <label>From:
+                                        	<input type="text" class="datepicker" name="date" required="">
+										</label>
+                                        <label>To:
+                                        	<input type="text" class="datepicker" name="date" required="">
+										</label>
+                                        <a class="btn btn-primary btn-sm">view</a>
+                                    </div>
 								</div>
 							</div>
 							<div class="row">  
@@ -71,7 +75,7 @@
 													<td></td>
 													<td></td>
 													<td></td>
-													<td><a class="btn btn-primary btn-xs">view</a></td>
+													<td><a class="btn btn-default btn-xs">view</a></td>
 													<td></td>
 													<td><a href="edit_expense" class="btn btn-primary btn-xs">edit</a></td>
 												</tr>
@@ -86,7 +90,8 @@
 										</div>
 									</div>
 								</div>
-							</div><a class="btn btn-primary btn-xs">Export excel</a>
+							</div>
+							<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 						</div>
 					</div>
 				</div>

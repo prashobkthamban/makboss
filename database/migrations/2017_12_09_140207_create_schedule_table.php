@@ -37,6 +37,7 @@ class CreateScheduleTable extends Migration
             $table->date('schedule_to_on');
             $table->timestamp('schedule_reported_on');
             $table->integer('schedule_status');
+            $table->string('visit_photos');
             $table->integer('delete_status');
             $table->timestamp('deleted_at');
             $table->timestamps();

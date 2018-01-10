@@ -37,118 +37,121 @@
 								<li><a href="#detailed" data-toggle="tab">Detailed Report</a></li>
 							</ul>
 							<div class="tab-content">
-								<div class="tab-pane fade in active" id="quick"><br>
-									<div class="panel-body">
-										<div class="col-lg-12">
-											<div class="col-lg-2">
-												<div class="form-group">
-													<label> Attended by:</label>
-													<select class="form-control">
-														<option selected>Usernames</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-3">
-												<div class="form-group">
-													<label> Customer:</label>
-													<select class="form-control">
-														<option selected>customer names</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-7">
-												<div class="form-group" style="margin-top:25px;">
-													<label>From:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<label>To:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<a class="btn btn-primary btn-sm">view</a>
-												</div>
-											</div>
-										</div>
-										<div class="row">  
-											<div class="col-lg-12">
-												<div class="table-responsive">
-													<table class="table ">
-														<thead>
-															<tr>
-																<th>Sl.no</th>
-																<th>Customer</th>
-																<th>Visit Time</th> 
-																<th>Sale Value</th>
-																<th>Attended by</th>
-																<th>Notes</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td></td>
-																<td></td>
-																<td></td>
-																<td></td>
-																<td></td>
-																<td></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-5">
-										<div class="panel panel-primary" style="height:100px;">
+								<div class="tab-pane fade in active" id="quick">
+									<div class="row">
+										<div class="col-lg-12"><br>
 											<div class="panel-body">
+    											<div class="col-lg-3">
+    												<div class="form-group">
+                                                        <label> Attended by:</label>
+                                                        <select class="form-control">
+                    										<option selected>All</option>
+                    										<option>Only me</option>
+                    										<option>Usernames</option>
+                    									</select>
+                                                    </div>
+                                                 </div>   
+                                                 <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label> Customer:</label>
+                                                        <select class="form-control">
+                                                            <option selected>customer names</option>
+                                                        </select>
+                                                    </div>
+                                                 </div> 
+                                                 <div class="col-lg-6">
+                                                    <div class="form-group" style="margin-top:25px;">
+                                                        <label>From:
+                                                        	<input type="text" class="datepicker" name="date" required="">
+        												</label>
+                                                        <label>To:
+                                                        	<input type="text" class="datepicker" name="date" required="">
+        												</label>
+                                                        <a class="btn btn-primary btn-sm">view</a>
+                                                    </div>
+                                                 </div> 
+												</div> 
 												<div class="table-responsive">
-													<table class="table ">
-														<thead>
-															<tr>
-																<th>Total Visits</th> 
-																<td></td>
-															</tr>
-														</thead>	
-															<tr>
-																<th>Total Sale Value</th>
-																<td></td>
-															</tr>
-													</table>
-												</div>
+    												<table class="table ">
+    													<thead>
+    														<tr>
+    															<th>Sl.no</th>
+    															<th>Customer</th>
+    															<th>Visit Time</th> 
+    															<th>Sale Value</th>
+    															<th>Attended by</th>
+    															<th>Notes</th>
+    														</tr>
+    													</thead>
+    													<tbody>
+    														<tr>
+    															<td></td>
+    															<td></td>
+    															<td></td>
+    															<td></td>
+    															<td></td>
+    															<td></td>
+    														</tr>
+    													</tbody>
+    												</table>
+    											</div>
 											</div>
 										</div>
-										<a class="btn btn-primary btn-xs">Export excel</a>
-									</div>
+    									<div class="col-lg-5">
+    										<div class="panel panel-primary" style="height:100px;">
+    											<div class="panel-body">
+    												<table class=" table" >
+                            							<thead>
+                            							<tr>
+                            								<th style="text-align:justify">Total Visits</th>
+                            								<td style="text-align:justify"></td>
+                            							</tr>
+                            							</thead>
+                            							<tr>
+                            								<th style="text-align:justify">Total Sale Value</th>
+                            								<td style="text-align:justify"></td>
+                            							</tr>
+                            						</table>
+    											</div>
+    										</div>
+    										<button type="button" class="btn btn-default btn-xs" >Export excel</button>
+    									</div>
 								</div>
-								<div class="tab-pane fade" id="detailed"><br>
-									<div class="panel-body">
-										<div class="col-lg-12">
-											<div class="col-lg-2">
-												<div class="form-group">
-													<label> Attended by:</label>
-													<select class="form-control">
-														<option selected>Usernames</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-3">
-												<div class="form-group">
-													<label> Customer:</label>
-													<select class="form-control">
-														<option selected>customer names</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-7">
-												<div class="form-group" style="margin-top:25px;">
-													<label>From:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<label>To:</label>
-													<input type="text" id="datepicker" name="date" required>
-													<a class="btn btn-primary btn-sm">view</a>
-												</div>
-											</div>
-										</div>
-										<div class="row">  
-											<div class="col-lg-12">
-												<div class="table-responsive">
+								<div class="tab-pane fade" id="detailed">
+									<div class="row">
+										<div class="col-lg-12"><br>
+											<div class="panel-body">
+    											<div class="col-lg-3">
+    												<div class="form-group">
+                                                        <label> Attended by:</label>
+                                                        <select class="form-control">
+                    										<option selected>All</option>
+                    										<option>Only me</option>
+                    										<option>Usernames</option>
+                    									</select>
+                                                    </div>
+                                                 </div>   
+                                                 <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label> Customer:</label>
+                                                        <select class="form-control">
+                                                            <option selected>customer names</option>
+                                                        </select>
+                                                    </div>
+                                                 </div> 
+                                                 <div class="col-lg-6">
+                                                    <div class="form-group" style="margin-top:25px;">
+                                                        <label>From:
+                                                        	<input type="text" class="datepicker" name="date" required="">
+        												</label>
+                                                        <label>To:
+                                                        	<input type="text" class="datepicker" name="date" required="">
+        												</label>
+                                                        <a class="btn btn-primary btn-sm">view</a>
+                                                    </div>
+                                                 </div> 
+                                              </div> 
+                                                <div class="table-responsive">
 													<table class="table ">
 														<thead>
 															<tr>
@@ -171,40 +174,38 @@
 																<td></td>
 																<td></td>
 																<td><a class="btn btn-primary btn-xs">view</a></td>
-																<td><a class="btn btn-primary btn-xs">view</a></td>
+																<td><a class="btn btn-default btn-xs">view</a></td>
 																<td></td>
 																<td></td>
 															</tr>
 														</tbody>
 													</table>
 												</div>
-											</div>
 										</div>
 									</div>
-									<div class="col-lg-5">
-										<div class="panel panel-primary" style="height:130px;">
-											<div class="panel-body">
-												<div class="table-responsive">
-													<table class="table ">
-														<thead>
-															<tr>
-																<th>Total Visits</th> 
-																<td></td>
-															</tr>
-														</thead>	
-															<tr>
-																<th>Total Sale Value</th>
-																<td></td>
-															</tr>
-															<tr>
-																<th>Total Collection</th>
-																<td></td>
-															</tr>
-													</table>
-												</div>
-											</div>
+										<div class="col-lg-5">
+											<div class="panel panel-primary" style="height:140px;">
+        										<div class="panel-body">
+        											<table class=" table" >
+                            							<thead>
+                            							<tr>
+                            								<th style="text-align:justify">Total Visits</th>
+                            								<td style="text-align:justify"></td>
+                            							</tr>
+                            							</thead>
+                            							<tr>
+                            								<th style="text-align:justify">Total Sale Value</th>
+                            								<td style="text-align:justify"></td>
+                            							</tr>
+                            							<tr>
+                            								<th style="text-align:justify">Total Collection</th>
+                            								<td style="text-align:justify"></td>
+                            							</tr>
+                            						</table>
+        										</div>
+        									</div>
+        									<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 										</div>
-										<a class="btn btn-primary btn-xs">Export excel</a>
 									</div>
 								</div>
 							</div>

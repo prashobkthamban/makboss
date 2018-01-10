@@ -4,24 +4,33 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  background-color: #323232;
+  background-color: #f4f5f8;
 }
 #wrapper {
   width: 100%;
 }
 #page-wrapper {
-  padding: 0 15px;
-  min-height: 900px;
-  background-color: #eeeeee;
+  padding: 170px 15px;
+  min-height: 100%;
+  background-color: #f4f5f8;
 }
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
     margin: 0 0 0 260px;
-    padding: 0 30px;
+    padding: 90px 30px;
     border-left: 1px solid #e7e7e7;
   }
 }
+@media (min-width: 768px) {
+  #side-menu {
+      margin-bottom: 100%;
+  }
+}
+.navbar-default{
+	position:fixed;
+	width:100%;
+	}
 .navbar-top-links {
   margin-right: 0;
   margin-right: 0;
@@ -33,7 +42,7 @@ body {
   margin-right: 15px;
 }
 .navbar-top-links li a {
-  padding: 15px;
+  padding: 15px 10px 10px 30px;
   min-height: 50px;
 }
 .navbar-top-links .dropdown-menu li {
@@ -68,9 +77,10 @@ body {
   right: 0;
 }
 .navbar ul li a.active {
-  background-color: #2e2e2e;
-  color:#ff7e00;
+  background-color: #efefef;
+  color:#008380;
 }
+
 .sidebar .sidebar-nav.navbar-collapse {
   padding-left: 0;
   padding-right: 0;
@@ -79,11 +89,18 @@ body {
   padding: 15px;
 }
 .sidebar ul li {
-  border-bottom: 0.5px solid #444444;
+  border-bottom: 0.5px solid #d4d7dc;
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
+   box-shadow:inset 0 1px 0 rgba(255,255,255,.1)
 }
 .sidebar ul li a.active {
-  background-color: #2e2e2e;
-  color:#ff7e00;
+  background-color: #efefef;
+  color:#393a3d;
+  
+}
+.sidebar ul li a.hover {
+  background-color: #efefef;
+  color:#393a3d;
 }
 .sidebar .arrow {
   float: right;
@@ -110,7 +127,7 @@ body {
 @media (min-width: 768px) {
   .sidebar {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 260px;
     margin-top: 51px;
   }
@@ -441,12 +458,12 @@ table.dataTable thead .sorting:after {
   }
 }
 .breadcrumb a{
-	color:#ff7e00;
+	color:#008380;
 }
 
 .nav-pills>li>a{
 	height:45px;
-	color:#333333;
+	color:#008380;
 	background-color:#fff;
 	
 }
@@ -457,12 +474,8 @@ table.dataTable thead .sorting:after {
 	
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-	border: 2px solid #ff7e00;
-	background-color:#ff7e00;
+	border: 2px solid #008380;
+	background-color:#008380;
 	color:#fff;
 	
-}
-.panel-heading {
-	font-weight:bold;
-	color:#626262;
 }

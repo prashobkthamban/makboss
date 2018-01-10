@@ -12,3 +12,4 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('public/js/makboss.min.js') }}"></script>
+    <script src="{{ asset('public/js/jquery-ui.js') }}"></script>

@@ -34,6 +34,13 @@
 					<div class="panel panel-default" style="margin-top:-15px;">
 						<div class="panel-body">
 							<div class="form-group">
+    							<label>Assign To:<span class="text-danger">*</span></label>
+    							<select class="form-control">
+    								<option selected="">Me</option>
+									<option>usernames</option>
+    							</select>
+        					</div>
+							<div class="form-group">
 								<label>First name: <span class="text-danger">*</span></label>
 								<input type="text" class="form-control" name=" " placeholder="enter firstname"  required>
 							</div>		  
@@ -63,7 +70,7 @@
 							</div>
 							<div class="span3">
 								<input class="btn btn-primary btn-sm" type="submit"  value="update">
-								<a class="btn btn-primary btn-sm" href="users">cancel</a>
+								<a class="btn btn-default btn-sm" href="users">cancel</a>
 							</div>
 						</div>
 					</div>

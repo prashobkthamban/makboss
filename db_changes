@@ -1,0 +1,5 @@
+ALTER TABLE `mkb_users` ADD `block_string` VARCHAR(255) NULL DEFAULT NULL AFTER `user_status`, ADD `show_status` INT NOT NULL AFTER `block_string`;
+ALTER TABLE `mkb_customer` ADD `block_string` VARCHAR(255) NULL DEFAULT NULL AFTER `customer_status`, ADD `show_status` INT NOT NULL AFTER `block_string`;
+ALTER TABLE `mkb_schedule` CHANGE `customer_id` `customer_id` INT(10) UNSIGNED NULL DEFAULT NULL, CHANGE `schedule_description` `schedule_description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL, CHANGE `schedule_from_on` `schedule_from_on` DATE NULL DEFAULT NULL, CHANGE `schedule_to_on` `schedule_to_on` DATE NULL DEFAULT NULL;
+
+table mkb_expense

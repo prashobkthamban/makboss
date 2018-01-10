@@ -52,13 +52,13 @@
 											<td></td>
 											<td></td>
 											<td></td>
-											<td><a href="customer_contact" class="btn btn-primary btn-xs">view</a></td>
+											<td><a href="customer_contact" class="btn btn-default btn-xs">view</a></td>
 											<td><a href="customer_activity" class="btn btn-primary btn-xs">run report</a></td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<a class="btn btn-primary btn-xs">Export excel</a>
+							<a class="btn btn-default btn-xs">Export excel</a>
 						</div>
 					</div>
 				</div>

@@ -37,17 +37,18 @@
         				<div class="panel-body">
         					<div class="col-lg-5">
         						<div class="form-group">
-        							<label>Assign To:<span class="text-danger">*</span></label>
-        							<select class="form-control">
-        								<option>users</option>
-        							</select>
-        						</div>
-        						<div class="form-group">
-        							<label>Secuirity Roles: <span class="text-danger">*</span></label>
+        							<label>Secuirity Role: <span class="text-danger">*</span></label>
         							<select class="form-control" name="roles" required>
         								<option>Manager</option>
         								<option>Supervisor</option>                                            
         								<option >Executive</option>
+        							</select>
+        						</div>
+        						<div class="form-group">
+        							<label>Assign To:<span class="text-danger">*</span></label>
+        							<select class="form-control">
+        								<option selected>Me</option>
+										<option>usernames</option>
         							</select>
         						</div>
         						<div class="form-group">
@@ -83,7 +84,7 @@
         						</div>
         						<div class="span3">
         							<input class="btn btn-primary btn-sm" type="submit"  value="create">
-        							<a class="btn btn-primary btn-sm" href="users">cancel</a>
+        							<a class="btn btn-default btn-sm" href="users">cancel</a>
         						</div>
         					</div>
         				</div>

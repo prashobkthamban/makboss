@@ -44,16 +44,17 @@
 								<div class="col-lg-6"><br>
 									<div class="form-group">
 										<label>Starting Date: <span class="text-danger">*</span></label>
-										<input type="text" id="datepicker" name="date" required>
+										<input type="text" class="datepicker" name="date" required>
 									</div> 
 									<div class="form-group">
 										<label>Ending Date: <span class="text-danger">*</span></label>
-										<input type="text" id="datepicker" name="date" required>
+										<input type="text" class="datepicker" name="date" required>
 									</div> 
 									<div class="form-group">
 										<label>Assign to: <span class="text-danger">*</span></label>
 										<select class="form-control">
-											<option>username</option>
+											<option selected>Me</option>
+											<option>usernames</option>
 										</select>
 									</div>
 									<div class="form-group">
@@ -68,7 +69,7 @@
 											</div>
 											<div class="span3">
 												<input class="btn btn-primary btn-sm" type="submit" value="create">
-												<a class="btn btn-primary btn-sm" href="index.php">cancel</a>
+												<a class="btn btn-default btn-sm" href="index.php">cancel</a>
 											</div>
 										</div>
 									</div>
@@ -80,7 +81,8 @@
 											<div class="form-group">
 												<label>Assign To: <span class="text-danger">*</span></label>
 												<select class="form-control">
-													<option>username</option>
+													<option selected>Me</option>
+													<option>usernames</option>
 												</select>
 											</div>
 											<div class="form-group">
@@ -108,7 +110,7 @@
 											</div>
 											<div class="span3">
 												<input class="btn btn-primary btn-sm" type="submit" value="create">
-												<a class="btn btn-primary btn-sm" href="index.php">cancel</a>
+												<a class="btn btn-default btn-sm" href="index.php">cancel</a>
 											</div>
 										</div>
 									</div>

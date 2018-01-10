@@ -33,52 +33,51 @@
 					</div>
 					<div class="panel panel-default" style="margin-top:-15px;">
 						<div class="panel-body">
-							<div class="table-responsive">
 								<table class=" table" >
 									<thead>
-										<tr>
-											<th>Assigned to</th>
-											<td></td>
-										</tr>
-									</thead>	
-										<tr>
-											<th>Contact name</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Email</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Telephone</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Mobile</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Address</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Visit Schedule </th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Credit Limit</th>
-											<td></td>
-										</tr>
-										<tr>
-											<th>Payment Terms</th>
-											<td></td>
-										</tr>
+									<tr >
+										<th style="text-align:justify">Assigned to</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									</thead>
+									<tr>
+										<th style="text-align:justify">Contact name</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Email</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Telephone</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Mobile</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Address</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Visit Schedule </th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Credit Limit</th>
+										<td style="text-align:justify"></td>
+									</tr>
+									<tr>
+										<th style="text-align:justify">Payment Terms</th>
+										<td style="text-align:justify"></td>
+									</tr>
 								</table>
-							</div>
 							<div class="span3">
 								<a class="btn btn-primary btn-sm" href="edit_customer">edit</a>
-								<a class="btn btn-primary btn-sm">remove</a>
+								<a class="btn btn-default btn-sm">remove</a>
 								<a class="btn btn-primary btn-sm">block</a>
+								<a class="btn btn-primary btn-sm">unblock</a>
 							</div>
 						</div>
 					</div>

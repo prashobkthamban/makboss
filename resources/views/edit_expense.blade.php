@@ -35,7 +35,7 @@
 						<div class="panel-body">
 							<div class="form-group">
     							<label>Date: <span class="text-danger">*</span></label><br>
-    							<input type="text" id="datepicker" name="date" required>
+    							<input type="text" class="datepicker" name="date" required>
     						</div>
 							<div class="form-group">
 								<label> Amount: <span class="text-danger">*</span></label>
@@ -51,7 +51,7 @@
 							</div>
 							<div class="span3">
 								<input class="btn btn-primary btn-sm" type="submit"  value="update">
-								<a class="btn btn-primary btn-sm" href="users">cancel</a>
+								<a class="btn btn-default btn-sm" href="users">cancel</a>
 							</div>
 						</div>
 					</div>

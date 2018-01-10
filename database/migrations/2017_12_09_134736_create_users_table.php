@@ -61,13 +61,29 @@ class CreateUsersTable extends Migration
             $table->string('user_longitude');
             $table->string('username');
             $table->string('password');
+            $table->string('user_image');
             $table->string('user_key');
             $table->date('user_last_blocked_on')->nullable();
             $table->date('user_last_deleted_on')->nullable();
             $table->integer('user_role');
             $table->integer('user_status');
+            $table->string('block_string')->nullable();
+            $table->integer('show_status');
+            $table->timestamp('blocked_on')->nullable();
             $table->integer('delete_status');
-            $table->timestamp('deleted_at');
+            $table->timestamp('deleted_at')->nullable();
+            $table->integer('deleted_by')->unsigned()->nullable();
+            $table->foreign('deleted_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
+            $table->integer('modified_by')->unsigned()->nullable();
+            $table->foreign('modified_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
+            $table->integer('blocked_by')->unsigned()->nullable();
+            $table->foreign('blocked_by')
+                            ->references('user_id')->on('mkb_users')
+                            ->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });

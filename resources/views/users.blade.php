@@ -57,11 +57,11 @@
 													<td></td>
 													<td></td>
 													<td><a href="view_manager" class="btn btn-primary btn-xs">view</a></td>
-													</tr>
+												</tr>
 											</tbody>
 										</table>   
 									</div>
-									<a class="btn btn-primary btn-xs">Export excel</a>
+									<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 								</div>
 								<div class="tab-pane fade " id="supervisors"><br>
 									<div class="table-responsive">
@@ -84,7 +84,7 @@
 											</tbody>
 										</table>   
 									</div>
-									<a class="btn btn-primary btn-xs">Export excel</a>
+									<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 								</div>
 								<div class="tab-pane fade" id="executives">
 									<div class="table-responsive"><br>
@@ -107,7 +107,7 @@
 												</tbody>
 										</table>   
 									</div>
-									<a class="btn btn-primary btn-xs">Export excel</a>
+									<button type="button" class="btn btn-default btn-xs" >Export excel</button>
 								</div>
 							</div>
 						</div>
